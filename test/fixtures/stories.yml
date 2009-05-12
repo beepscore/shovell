@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  link: MyString
+  name: My shiny weblog
+  link: http://pocos.net
 
 two:
-  name: MyString
-  link: MyString
+  name: SitePoint Forums
+  link: http://www.sitepoint.com/forums/
