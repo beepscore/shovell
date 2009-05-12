@@ -1,10 +1,9 @@
 class CreateStories < ActiveRecord::Migration
   def self.up
-  	#  set hash key value pair :force to true
-  	#  this overwrites prior stories table
-  	#  plan to run rake to migrate data, then set :force to false
-  	#  reference Lenz pg 129
-    create_table :stories, :force => true do |t|
+  	#  Don't overwrite prior stories table
+  	#    set hash key-value pair :force to false
+  	#    reference Lenz pg 129
+    create_table :stories, :force => false do |t|
       t.string :name
       t.string :link
 
