@@ -8,3 +8,9 @@ body {
   border: 10px solid #ccc;
   padding: 10px 10px 20px 10px;
 }
+#notification {
+  background-color: #cfc;
+  border: 5px solid #9c9;
+  padding: 5px;
+  margin: 10px 0;
+}
