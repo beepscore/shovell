@@ -8,7 +8,7 @@
     <%= link_to @story.link, @story.link %>
 </p>
 <div id="vote_form">
-    <% form_remote_tag :url => story_votes_path(@story) do %>
-        <%= submit_tag 'shove it' %>
+    <% form_remote_for [ @story, Vote.new ] do |f| %>
+        <%= f.submit 'shove it' %>
     <% end %>
 </div>
