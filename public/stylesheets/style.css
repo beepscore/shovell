@@ -17,3 +17,23 @@ body {
     padding: 5px;
     margin: 10px 0;
 }
+#vote_score {
+    float: right;
+    color: #9c9;
+}
+
+#vote_form {
+    margin: 10px 0;
+}
+
+#vote_form input {
+    padding: 3px 5px;
+    border: 3px solid #393;
+    background-color: #cfc;
+    text-decoration: none;
+    color: #393;
+}
+
+#vote_form  input:hover {
+    background-color: #aea;
+}
