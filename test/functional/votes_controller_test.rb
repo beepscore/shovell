@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class VotesControllerTest < ActionController::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+  def test_should_accept_vote
+    assert stories(:two).votes.empty?
+    post :create, :story_id => stories(:two)
+    assert ! assigns(:story).votes.empty?
   end
 end
