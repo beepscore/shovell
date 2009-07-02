@@ -63,3 +63,19 @@ body {
     color: #999;
     font-size: smaller;
 }
+
+#navigation {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+}
+
+#navigation li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#navigation li a {
+    color: #fff;
+}
