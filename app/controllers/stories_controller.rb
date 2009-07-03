@@ -1,4 +1,5 @@
 class StoriesController < ApplicationController
+  before_filter :login_required, :only => [ :new, :create ]
   def index
     @story = Story.find(:first, :order => 'RANDOM()')
   end
